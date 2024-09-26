@@ -1,0 +1,118 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#nome {
+    color: #e91e63;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #e91e63;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.profile-photo img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.icon-photo img {
+    width: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+a {
+    color: #e91e63;
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: white;
+    
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: pink;
+    color: white;
+  }
+
+/* Typing Effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+#nome {
+    width: 20ch;
+    animation: typing 3.5s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+.bars {
+    flex: 1; /* Faz com que as divs ocupem a mesma quantidade de espaço */
+    max-width: 50%; /* Limita o tamanho máximo de cada div a 50% do container */
+    background-color: #333; /* Cor de fundo para visualizar */
+    color: white; /* Cor do texto */
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    border-radius: 8px; /* Bordas arredondadas para estilo */
+}
+
+.cards {
+    display: flex;
+    gap: 10px;
+}
