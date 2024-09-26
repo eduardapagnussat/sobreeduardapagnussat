@@ -22,6 +22,10 @@ h1 {
     margin-bottom: 20px;
 }
 
+h2 {
+    color: pink;
+}
+
 #nome {
     color: #e91e63;
     font-family: 'Courier New', Courier, monospace;
@@ -99,14 +103,14 @@ a:link, a:visited {
 
 #nome {
     width: 20ch;
-    animation: typing 3.5s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    animation: typing 3.5s steps(1000) 1s forwards, blink 0.75s step-end infinite;
 }
 
 .bars {
     flex: 1; /* Faz com que as divs ocupem a mesma quantidade de espaço */
     max-width: 50%; /* Limita o tamanho máximo de cada div a 50% do container */
-    background-color: #333; /* Cor de fundo para visualizar */
-    color: white; /* Cor do texto */
+    background-color: pink; /* Cor de fundo para visualizar */
+    color: rgb(48, 27, 36); /* Cor do texto */
     padding: 20px;
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
     border-radius: 8px; /* Bordas arredondadas para estilo */
